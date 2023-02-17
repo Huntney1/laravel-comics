@@ -1,5 +1,6 @@
 @use './variables.scss' as *;
 @import '~bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {
@@ -12,18 +13,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
 header {
+    // Top Superiore della Nav Bar o dell'Header
     section.header-aside {
         background-color: $main-color ;
 
+        // Posiziono i 2 Text a Dx
         ul {
-            text-align: end;
+            text-align:end;
 
             li {
                 list-style: none;
                 display: inline-block;
                 padding-left: 1rem;
 
+                //Dimensione e colore text
                 a {
                     text-decoration: none;
                     color: white;
@@ -34,17 +39,45 @@ header {
         }
     }
 
+    // stabilisco la grandezza del Logo DC nella Nav Bar
     nav img.logo-img {
         width: 50%;
-
     }
 }
+/* NAVBAR */
+
+//Forms Input Search
+.placeorder-form input[type="search"] {
+    border: none;
+    border-bottom: 2px solid $main-color;
+
+  }
+
+.placeorder-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeorder-search-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+
+  }
+
+  .placeorder-search-btn i {
+    font-size: 1.2rem;
+  }
 
 
+/* MAIN */
 main {
     padding-bottom: 2rem;
     background-color: $main-bg-color;
 
+    //Immagine di Background Top Main
     div.jumbotron {
         background-image: url(../img/jumbotron.jpg);
         background-position: start;
@@ -52,7 +85,7 @@ main {
         background-repeat: no-repeat;
         height: 400px;
     }
-
+    // Current Series
     section.current-series {
         position: relative;
         padding-top: 3rem;
@@ -68,16 +101,16 @@ main {
             text-align: center;
             left: 6.605em;
         }
-
+        //LOAD MORE BUTTON
         a {
+            color: white;
+            background-color: #2982F9;
             display: block;
             width: 20%;
             text-decoration: none;
-            color: white;
-            background-color: #2982F9;
-            margin: 0 auto;
-            padding: 0.5rem 0.3rem;
-            font-size: 0.7rem;
+            margin: 2em auto 0em;
+            padding: 1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             text-align: center;
 
