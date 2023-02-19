@@ -56,9 +56,9 @@
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="#">NEWS</a>
                     </li>
-                </ul>
+
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle font-Roboto" type="button" data-bs-toggle="dropdown"
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false" style="border: none">
                         Shop
                     </button>
@@ -67,9 +67,10 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+                </ul>
                 </div>
                 <form class="d-flex placeorder-form" role="search">
-                    <input class="form-control me-2 bi bi-search  border-bottom border-primary" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2 bi bi-search border-primary" type="search" placeholder="Search" aria-label="Search">
                     <button class="placeorder-search-btn" type="submit">
                       <i class="bi bi-search"></i>
                     </button>
