@@ -1,5 +1,9 @@
 @extends('layout.app')
 
 @section('main-content')
-<h1>dettaglio comics</h1>
+<div class="bg-blue">
+    <h1>dettaglio comics</h1>
+</div>
+
+
 @endsection
