@@ -1,8 +1,7 @@
 @extends('layout.app')
 
 @section('main-content')
-    <div class="jumbotron">
-    </div>
+    <div class="jumbotron"></div>
     <section class="current-series">
         <div class="container">
             <div class="row">
@@ -18,7 +17,7 @@
                     </div>
                 @endforeach
             </div>
-            <a href="#"> LOAD MORE </a>
+            <a class='but-load' href="#"> LOAD MORE </a>
         </div>
     </section>
 @endsection

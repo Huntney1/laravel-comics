@@ -24,6 +24,7 @@ Route::get('/', function () {
 Route::get('/comics/{titolo}', function($titolo){
     $cards = config('db_comics.card');
 
+    $single = '';
     foreach($cards as $key => $card){
         if($key == $titolo){
             $single = $card;
